@@ -7,14 +7,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'AB6C7F1DE983FABF4D38C481A8A9D'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'dodicms3'
-    BLOB_STORAGE_CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=dodicms3;AccountKey=nV0/2/LUTFtKQro6vy2gE5mV5xUE0qiM2Q+TyUgU0K+LATG8QspNyMyun0I6AQQfJKb8/t04qiHl+AStArVjmQ==;EndpointSuffix=core.windows.net'
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'dodicms'
+    # BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'dodicms3'
+    # BLOB_STORAGE_CONNECTION_STRING = 'DefaultEndpointsProtocol=https;AccountName=dodicms3;AccountKey=nV0/2/LUTFtKQro6vy2gE5mV5xUE0qiM2Q+TyUgU0K+LATG8QspNyMyun0I6AQQfJKb8/t04qiHl+AStArVjmQ==;EndpointSuffix=core.windows.net'
+    # BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'dodicms'
 
     # For Storage emulator
-    # BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'devstoreaccount1'
-    # BLOB_STORAGE_CONNECTION_STRING = 'AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;'
-    # BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'local-cms'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'devstoreaccount1'
+    BLOB_STORAGE_CONNECTION_STRING = 'AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;'
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'local-cms'
 
     # For SQL Localhost
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'localhost'
@@ -38,7 +38,8 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "6ed8Q~60lTvYP5124X6dVZ1Q-~lQJjWcbHFRMb3T"
+    # CLIENT_SECRET = "6ed8Q~60lTvYP5124X6dVZ1Q-~lQJjWcbHFRMb3T"
+    CLIENT_SECRET = "test-ahihi"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -49,7 +50,9 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "d970448a-fc19-4c99-b1e3-da66678cd7de"
+    # CLIENT_ID = "d970448a-fc19-4c99-b1e3-da66678cd7de"
+    CLIENT_ID = "test_ahihi"
+
 
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
