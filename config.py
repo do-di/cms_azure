@@ -17,15 +17,15 @@ class Config(object):
     # BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'local-cms'
 
     # For SQL Localhost
-    # SQL_SERVER = os.environ.get('SQL_SERVER') or 'localhost'
-    # SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'local_cms'
-    # SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'sa'
-    # SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '1234'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'localhost'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'local_cms'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'sa'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '1234'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'dodi-cms.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dodi-cms'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'dodi-admin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Abc@1234'
+    # SQL_SERVER = os.environ.get('SQL_SERVER') or 'dodi-cms.database.windows.net'
+    # SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dodi-cms'
+    # SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'dodi-admin'
+    # SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Abc@1234'
 
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     # SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + quote_plus(SQL_PASSWORD) + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
