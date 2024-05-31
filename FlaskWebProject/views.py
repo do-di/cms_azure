@@ -62,6 +62,7 @@ def post(id):
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    app.logger.info('user login')
     if current_user.is_authenticated:
         app.logger.info('user authenticated successfully')
         return redirect(url_for('home'))
