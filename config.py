@@ -12,15 +12,15 @@ class Config(object):
     # BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'dodicms'
 
     # For Storage emulator
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'devstoreaccount1'
-    BLOB_STORAGE_CONNECTION_STRING = os.environ.get('BLOB_STORAGE_CONNECTION_STRING') or 'AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;'
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'local-cms'
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'dodicms1'
+    BLOB_STORAGE_CONNECTION_STRING = os.environ.get('BLOB_STORAGE_CONNECTION_STRING') or 'DefaultEndpointsProtocol=https;AccountName=dodicms1;AccountKey=SCCLU4Ei9+KS7bkbZv1QoKj2PoQJBFN5uH9YqYuZOCvSf+10AnI8Bd4XhpkieNyZsHP4Ub8f4KWr+AStKH+TWw==;EndpointSuffix=core.windows.net'
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'dodicms1'
 
     # For SQL Localhost
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'localhost'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'local_cms'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'sa'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '1234'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'dodicms.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dodicms'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'dodicms'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Abc@1234'
 
     # SQL_SERVER = os.environ.get('SQL_SERVER') or 'dodi-cms.database.windows.net'
     # SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'dodi-cms'
